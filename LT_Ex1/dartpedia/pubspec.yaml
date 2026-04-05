@@ -1,0 +1,10 @@
+name: _
+publish_to: none
+
+environment:
+  sdk: ^3.8.1 # Sửa lại cho đúng với phiên bản Dart SDK của bạn nếu cần
+
+workspace:
+  - cli
+  - command_runner
+  - wikipedia
