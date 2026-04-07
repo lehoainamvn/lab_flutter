@@ -1,4 +1,4 @@
-# lehoainam_2224802010139_lab1_TH
+# lehoainam_2224802010139_lab2_TH
 
 ## 🎥 Demo Video Thuc Hanh
 
