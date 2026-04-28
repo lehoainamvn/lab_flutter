@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'add_contact_page.dart';
+import 'edit_contact_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -36,7 +37,9 @@ class HomePage extends StatelessWidget {
                 return ListView.builder(
                   itemCount: snapshot.data!.docs.length,
                   itemBuilder: (context, index) {
-                    var data = snapshot.data!.docs[index];
+                    var doc = snapshot.data!.docs[index];
+                    var data = doc.data();
+                    
                     return ListTile(
                       leading: CircleAvatar(
                         backgroundColor: Colors.orange[100],
@@ -45,6 +48,20 @@ class HomePage extends StatelessWidget {
                       title: Text(data['name'], style: const TextStyle(fontWeight: FontWeight.bold)),
                       subtitle: Text(data['phone']),
                       trailing: const Icon(Icons.phone),
+                      onTap: () {
+                        // Chuyển đến trang chỉnh sửa khi nhấn vào contact
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => EditContactPage(
+                              docId: doc.id,
+                              name: data['name'] ?? '',
+                              phone: data['phone'] ?? '',
+                              email: data['email'] ?? '',
+                            ),
+                          ),
+                        );
+                      },
                     );
                   },
                 );
