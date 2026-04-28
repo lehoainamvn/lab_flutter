@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "339800563796",
+    "project_id": "bsm-manager",
+    "storage_bucket": "bsm-manager.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:339800563796:android:14b29b77cff53083188dc1",
+        "android_client_info": {
+          "package_name": "com.example.lehoainam_2224802010139_lab4"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "339800563796-lscfnakeaaid3liroh8jkctp0f9isd82.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lehoainam_2224802010139_lab4",
+            "certificate_hash": "0aeb5f0994c4abfcf05cbd2351e636266861a5c2"
+          }
+        },
+        {
+          "client_id": "339800563796-9bl59o42v2rjcc7mumqmucrthjsb0q76.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYje9DgEpK-7lkf-17Q1_Da42rgiQnGmM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "339800563796-9bl59o42v2rjcc7mumqmucrthjsb0q76.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "339800563796-dojqltssbni61ff71ne89vhq3b0017jo.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.lehoainam2224802010139Lab4"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
