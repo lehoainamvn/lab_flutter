@@ -12,14 +12,43 @@ class _AddContactPageState extends State<AddContactPage> {
   final _phoneController = TextEditingController();
   final _emailController = TextEditingController();
 
-  Future createContact() async {
-    // Thêm dữ liệu vào bộ sưu tập 'contacts' trên Firestore
-    await FirebaseFirestore.instance.collection('contacts').add({
-      'name': _nameController.text.trim(),
-      'phone': _phoneController.text.trim(),
-      'email': _emailController.text.trim(),
-    });
-    if (mounted) Navigator.pop(context);
+  Future<void> createContact() async {
+    // Kiểm tra dữ liệu trống
+    if (_nameController.text.trim().isEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Please enter a name')),
+      );
+      return;
+    }
+
+    try {
+      // Thêm dữ liệu vào bộ sưu tập 'contacts' trên Firestore
+      await FirebaseFirestore.instance.collection('contacts').add({
+        'name': _nameController.text.trim(),
+        'phone': _phoneController.text.trim(),
+        'email': _emailController.text.trim(),
+      });
+      
+      // Quay lại trang trước ngay lập tức
+      if (mounted) {
+        Navigator.pop(context, true); // Trả về true để báo hiệu đã thêm thành công
+        
+        // Hiển thị thông báo sau khi đã pop
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Contact added successfully!'),
+            duration: Duration(seconds: 2),
+          ),
+        );
+      }
+    } catch (e) {
+      // Hiển thị thông báo lỗi nếu có
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Error: $e')),
+        );
+      }
+    }
   }
 
   @override
