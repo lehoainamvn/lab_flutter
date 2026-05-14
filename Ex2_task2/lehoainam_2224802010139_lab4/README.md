@@ -1,5 +1,5 @@
-# ex2
+# ex2_task2
 
 ## 🎥 Demo Video Thuc Hanh
 
-👉 [video demo](https://drive.google.com/file/d/1K9kvrm_Jrg0g9G2ZJb3rWxJC9WoHOhCW/view?usp=drive_link)
+👉 [video demo](https://drive.google.com/file/d/1BBG3m9zShBDgVad-YXa_7xzlmAusMtMx/view?usp=sharing)
