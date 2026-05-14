@@ -3,6 +3,13 @@
 ## 🎥 Demo Video lehoainam_2224802010139_lab1_LT
 👉 [video demo](https://drive.google.com/file/d/1uK6MCLOPOwbJzdqirDOFQVfRFjK-qG26/view?usp=drive_link)
 
+## 🎥 Demo Video Ex2_task1
+👉 [video demo](https://drive.google.com/file/d/17JffRsuYP0slr0Nroh9uz7TY45i8_2eA/view?usp=sharing)
+
+## 🎥 Demo Video Ex2_task2
+👉 [video demo](https://drive.google.com/file/d/1BBG3m9zShBDgVad-YXa_7xzlmAusMtMx/view?usp=sharing)
+
+
 # Thực Hành
 
 ## 🎥 Demo Video lehoainam_2224802010139_lab1_TH
