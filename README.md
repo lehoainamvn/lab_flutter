@@ -26,3 +26,7 @@
 
 ## 🎥 Demo Video lehoainam_2224802010139_lab5_TH
 👉 [video demo](https://drive.google.com/file/d/10Lnm6KZSzHZ6_acV1ClK56NS_KNQKK99/view?usp=sharing)
+
+
+## 🎥 Demo Video lehoainam_2224802010139_lab6_TH
+👉 [video demo](https://drive.google.com/file/d/18MYDCiPYZCRrnYZ-DsSngvE71R_NUNP7/view?usp=sharing)
